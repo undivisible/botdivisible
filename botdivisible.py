@@ -14,7 +14,7 @@ intents.members = True
 
 # Create the bot instance
 bot = commands.Bot(
-    command_prefix='!', 
+    command_prefix='/', 
     intents=intents,
     activity=discord.Activity(type=discord.ActivityType.watching, name="you.")
 )
@@ -65,7 +65,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         return filename
 
 # Bot commands
-@bot.command()
+@bot.command(name='play')
 async def play(ctx, url):
     await join_voice(ctx)
     
@@ -75,7 +75,7 @@ async def play(ctx, url):
     
     await ctx.send(f"**Now playing:** {filename}")
 
-@bot.command()    
+@bot.command(name='pause')    
 async def pause(ctx):
     if ctx.voice_client.is_playing():
         ctx.voice_client.pause()

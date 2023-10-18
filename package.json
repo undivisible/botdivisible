@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "ytdl": "^1.4.1",
+    "ytdl-core-discord": "^1.3.1"
+  },
+  "name": "botdivisible",
+  "version": "2.0.0",
+  "description": "the cutest discord bot",
+  "main": "botdivisible.ts",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undivisible/botdivisible.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "undivisible",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/undivisible/botdivisible/issues"
+  },
+  "homepage": "https://undivisible.dev/"
+}
